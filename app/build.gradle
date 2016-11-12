@@ -39,4 +39,6 @@ dependencies {
     compile files('libs/ZipEntry.jar')
     //MPAndroidChart:https://github.com/PhilJay/MPAndroidChart
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.0'
+    //EventBus:https://github.com/greenrobot/EventBus/
+    compile 'org.greenrobot:eventbus:3.0.0'
 }

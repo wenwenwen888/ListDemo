@@ -68,6 +68,8 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
         tips.add("自定义进度条");
         names.add("MPAndroidLineChart Demo");
         tips.add("折线图 Demo");
+        names.add("EventBus Demo");
+        tips.add("EventBus简单使用 Demo");
     }
 
     @Override
@@ -104,8 +106,13 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
                 intent.putExtra("title", names.get(position));
                 startActivity(intent);
                 break;
-            case 6://CustomProgressBar Demo
+            case 6://MPAndroidLineChart Demo
                 intent = new Intent(this, MPAndroidLineChartActivity.class);
+                intent.putExtra("title", names.get(position));
+                startActivity(intent);
+                break;
+            case 7://EventBus Demo
+                intent = new Intent(this, EventBusActivity.class);
                 intent.putExtra("title", names.get(position));
                 startActivity(intent);
                 break;

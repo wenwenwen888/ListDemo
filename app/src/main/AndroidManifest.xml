@@ -30,6 +30,8 @@
         <activity android:name="com.wyt.list.activity.DrawerLayoutActivity" />
         <activity android:name="com.wyt.list.activity.CustomProgressBarActivity" />
         <activity android:name=".activity.MPAndroidLineChartActivity" />
+        <activity android:name=".activity.EventBusActivity" />
+        <activity android:name=".activity.EventBusSecondActivity" />
 
     </application>
 
