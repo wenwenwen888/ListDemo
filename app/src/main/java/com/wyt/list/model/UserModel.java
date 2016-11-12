@@ -1,11 +1,15 @@
 package com.wyt.list.model;
 
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
+
 /**
  * Created by Won on 2016/11/11.
  */
 
-public class UserModel {
+public class UserModel extends RealmObject {
 
+    @PrimaryKey
     private String name;
     private int age;
 
