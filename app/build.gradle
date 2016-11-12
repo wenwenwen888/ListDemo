@@ -42,4 +42,6 @@ dependencies {
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.0'
     //EventBus:https://github.com/greenrobot/EventBus/
     compile 'org.greenrobot:eventbus:3.0.0'
+    //截屏库:https://github.com/tarek360/InstaCapture
+    compile "com.github.tarek360:instacapture:1.2.2"
 }

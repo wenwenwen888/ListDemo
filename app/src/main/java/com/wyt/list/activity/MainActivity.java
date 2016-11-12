@@ -72,6 +72,8 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
         tips.add("EventBus简单使用 Demo");
         names.add("Realm Demo");
         tips.add("Realm数据库的简单使用");
+        names.add("ScreenShot Demo");
+        tips.add("一个简单的截屏工具");
     }
 
     @Override
@@ -120,6 +122,10 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
                 break;
             case 8://Realm Demo
                 intent = new Intent(this, RealmActivity.class);
+                intent.putExtra("title", names.get(position));
+                startActivity(intent);
+            case 9://ScreenShot Demo
+                intent = new Intent(this, ScreenShotActivity.class);
                 intent.putExtra("title", names.get(position));
                 startActivity(intent);
                 break;
