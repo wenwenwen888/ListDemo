@@ -115,7 +115,7 @@
 
 #### 6,CustomProgressBar Demo
 一个自定义进度条</br>
->* 样式 : </br>
+>* 示例图 : </br>
 <img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/2.png" width="50%" height="50%"></br>
 
 `-------------------相关文件与代码-------------------`</br>
@@ -148,13 +148,29 @@ style.xml:
 
 #### 7,MPAndroidLineChart Demo
 基于MPAndroidChart的一个折线图</br>
+>* 示例图 : </br>
 <img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/1.png" width="50%" height="50%">
 
+[这里是MPAndroidChart的地址](https://github.com/PhilJay/MPAndroidChart)</br>
+`-------------------相关文件与代码-------------------`</br>
+主文件 : [MPAndroidLineChartActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MPAndroidLineChartActivity.java)</br>
+
 #### 8,EventBus Demo
-EventBus的简单使用
+EventBus的简单使用</br>
+[这里是EventBus的地址](https://github.com/greenrobot/EventBus)</br>
+`-------------------相关文件与代码-------------------`</br>
+主文件 : [EventBusActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusActivity.java)</br>
+[EventBusSecondActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusSecondActivity.java)</br>
 
 #### 9,Realm Demo
-Realm数据库的简单使用
+Realm数据库的简单使用</br>
+[Realm for Android详细教程](http://www.jianshu.com/p/28912c2f31db)</br>
+`-------------------相关文件与代码-------------------`</br>
+主文件 : [RealmActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/RealmActivity.java)</br>
 
 #### 10,ScreenShot Demo
-一个简单的截屏工具
+一个简单的截屏工具</br>
+[这里是截屏库的地址](https://github.com/tarek360/InstaCapture)</br>
+`-------------------相关文件与代码-------------------`</br>
+主文件 : [ScreenShotActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/ScreenShotActivity.java)</br>
+
