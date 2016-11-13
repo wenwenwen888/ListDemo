@@ -8,7 +8,7 @@ android {
     buildToolsVersion "24.0.3"
     defaultConfig {
         applicationId "com.wyt.list"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -44,4 +44,8 @@ dependencies {
     compile 'org.greenrobot:eventbus:3.0.0'
     //截屏库:https://github.com/tarek360/InstaCapture
     compile "com.github.tarek360:instacapture:1.2.2"
+    //画板,https://github.com/vilyever/AndroidDrawingView
+    compile 'com.github.vilyever:AndroidDrawingView:1.6.7'
+    //颜色选择器:https://github.com/gzu-liyujiang/AndroidPicker
+    compile 'cn.qqtheme.framework:ColorPicker:1.2.4'
 }

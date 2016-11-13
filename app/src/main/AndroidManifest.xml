@@ -22,9 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.wyt.list.activity.SocketActivity" />
-        <activity
-            android:name="com.wyt.list.activity.TransparentActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.wyt.list.activity.DrawingActivity" />
         <activity android:name="com.wyt.list.activity.UnFileActivity" />
         <activity android:name="com.wyt.list.activity.TimerActivity" />
         <activity android:name="com.wyt.list.activity.MultiMediaActivity" />
@@ -33,8 +31,8 @@
         <activity android:name=".activity.MPAndroidLineChartActivity" />
         <activity android:name=".activity.EventBusActivity" />
         <activity android:name=".activity.EventBusSecondActivity" />
-        <activity android:name=".activity.RealmActivity"/>
-        <activity android:name=".activity.ScreenShotActivity"/>
+        <activity android:name=".activity.RealmActivity" />
+        <activity android:name=".activity.ScreenShotActivity" />
 
     </application>
 
