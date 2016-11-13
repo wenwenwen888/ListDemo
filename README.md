@@ -1,6 +1,6 @@
 # ListDemo
 所有Demo仅用于个人测试</br>
-`一个伟大的项目, 都是源自于一个小小的demo~`
+`一个伟大的项目, 都是源自于一个个小小的demo~`
 
 #### 1,Socket Demo
 一个socket通信的简单demo,支持断开重连
