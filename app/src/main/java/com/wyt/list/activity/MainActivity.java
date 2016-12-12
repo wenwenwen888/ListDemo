@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
 
     //用于判断跳转Intent类型
     private static final int REQUECT_CODE_SDCARD = 0x00;
+    private static final int REQUECT_CODE_CAMERA = 0x01;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
         //Android6.0以上要申请权限
         if (Build.VERSION.SDK_INT >= 23) {
             MPermissions.requestPermissions(this, REQUECT_CODE_SDCARD, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+            MPermissions.requestPermissions(this, REQUECT_CODE_CAMERA, Manifest.permission.CAMERA);
         }
 
     }
@@ -76,69 +78,92 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
         tips.add("一个简单的截屏工具");
         names.add("Drawing Demo");
         tips.add("一个简单的画板");
+        names.add("Notification Demo");
+        tips.add("Notification广播简单使用");
+        names.add("CustomSearchEditText Demo");
+        tips.add("一个自定义搜索框");
+        names.add("Spinner Demo");
+        tips.add("NiceSpinner demo");
+        names.add("AssetsApk Demo");
+        tips.add("从Assets文件夹安装APK");
+        names.add("ProgressDialog Demo");
+        tips.add("自定义ProgressDialog");
+        names.add("QRCodeActivity Demo");
+        tips.add("二维码demo");
+        names.add("WatchActivity Demo");
+        tips.add("观察者模式demo");
+        names.add("AnimationActivity Demo");
+        tips.add("简单的动画效果");
     }
 
     @Override
     public void onItemClick(View view, int position) {
-        Intent intent;
         switch (position) {
             case 0://Socket Demo
-                intent = new Intent(this, SocketActivity.class);
-                intent.putExtra("title", names.get(position));
-                startActivity(intent);
+                startActivity(SocketActivity.class, names.get(position));
                 break;
             case 1://Unfile Demo
-                intent = new Intent(this, UnFileActivity.class);
-                intent.putExtra("title", names.get(position));
-                startActivity(intent);
+                startActivity(UnFileActivity.class, names.get(position));
                 break;
             case 2://Timer Demo
-                intent = new Intent(this, TimerActivity.class);
-                intent.putExtra("title", names.get(position));
-                startActivity(intent);
+                startActivity(TimerActivity.class, names.get(position));
                 break;
             case 3://MultiMedia Demo
-                intent = new Intent(this, MultiMediaActivity.class);
-                intent.putExtra("title", names.get(position));
-                startActivity(intent);
+                startActivity(MultiMediaActivity.class, names.get(position));
                 break;
             case 4://DrawerLayout Demo
-                intent = new Intent(this, DrawerLayoutActivity.class);
-                intent.putExtra("title", names.get(position));
-                startActivity(intent);
+                startActivity(DrawerLayoutActivity.class, names.get(position));
                 break;
             case 5://CustomProgressBar Demo
-                intent = new Intent(this, CustomProgressBarActivity.class);
-                intent.putExtra("title", names.get(position));
-                startActivity(intent);
+                startActivity(CustomProgressBarActivity.class, names.get(position));
                 break;
             case 6://MPAndroidLineChart Demo
-                intent = new Intent(this, MPAndroidLineChartActivity.class);
-                intent.putExtra("title", names.get(position));
-                startActivity(intent);
+                startActivity(MPAndroidLineChartActivity.class, names.get(position));
                 break;
             case 7://EventBus Demo
-                intent = new Intent(this, EventBusActivity.class);
-                intent.putExtra("title", names.get(position));
-                startActivity(intent);
+                startActivity(EventBusActivity.class, names.get(position));
                 break;
             case 8://Realm Demo
-                intent = new Intent(this, RealmActivity.class);
-                intent.putExtra("title", names.get(position));
-                startActivity(intent);
+                startActivity(RealmActivity.class, names.get(position));
             case 9://ScreenShot Demo
-                intent = new Intent(this, ScreenShotActivity.class);
-                intent.putExtra("title", names.get(position));
-                startActivity(intent);
+                startActivity(ScreenShotActivity.class, names.get(position));
                 break;
             case 10://Drawing Demo
-                intent = new Intent(this, DrawingActivity.class);
-                intent.putExtra("title", names.get(position));
-                startActivity(intent);
+                startActivity(DrawingActivity.class, names.get(position));
+                break;
+            case 11://Notification Demo
+                startActivity(NotificationActivity.class, names.get(position));
+                break;
+            case 12://CustomSearchEditText Demo
+                startActivity(CustomSearchEditTextActivity.class, names.get(position));
+                break;
+            case 13://Spinner Demo
+                startActivity(SpinnerActivity.class, names.get(position));
+                break;
+            case 14://AssetsApk Demo
+                startActivity(AssetsApkActivity.class, names.get(position));
+                break;
+            case 15://ProgressDialog Demo
+                startActivity(ProgressDialogActivity.class, names.get(position));
+                break;
+            case 16://QRCode Demo
+                startActivity(QRCodeActivity.class, names.get(position));
+                break;
+            case 17://WatchActivity Demo
+                startActivity(WatchActivity.class, names.get(position));
+                break;
+            case 18://AnimationActivity Demo
+                startActivity(AnimationActivity.class, names.get(position));
                 break;
             default:
                 break;
         }
+    }
+
+    private void startActivity(Class<?> cls, String title) {
+        Intent intent = new Intent(this, cls);
+        intent.putExtra("title", title);
+        startActivity(intent);
     }
 
     /**
@@ -164,5 +189,21 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
     @PermissionDenied(REQUECT_CODE_SDCARD)
     public void requestSdcardFailed() {
         Toast.makeText(this, "没有读取内存权限", Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * 授权成功
+     */
+    @PermissionGrant(REQUECT_CODE_CAMERA)
+    public void requestCameraSuccess() {
+        Toast.makeText(this, "成功获取相机权限", Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * 授权失败
+     */
+    @PermissionDenied(REQUECT_CODE_CAMERA)
+    public void requestCameraFailed() {
+        Toast.makeText(this, "没有相机权限", Toast.LENGTH_SHORT).show();
     }
 }

@@ -13,6 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -20,6 +21,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
 }
 
 dependencies {
@@ -27,25 +29,39 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:support-vector-drawable:24.2.1'
+    compile 'com.android.support:design:24.2.1'
     testCompile 'junit:junit:4.12'
-    //Butter Knife
-    compile 'com.jakewharton:butterknife:8.4.0'
-    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //    //截屏库:https://github.com/tarek360/InstaCapture
+    //    compile "com.github.tarek360:instacapture:1.2.2"
+    //压缩包
+    compile files('libs/ZipEntry.jar')
+    //自定义搜索框
+    compile project(':searchedittext')
+    compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:recyclerview-v7:24.2.1'
     compile 'com.google.code.gson:gson:2.7'
-    //简单易用的处理Android M运行时权限的库,https://github.com/hongyangAndroid/MPermissions
-    apt 'com.zhy:mpermission-compiler:1.0.0'
-    compile 'com.zhy:mpermission-api:1.0.0'
-    compile files('libs/ZipEntry.jar')
     //MPAndroidChart:https://github.com/PhilJay/MPAndroidChart
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.0'
     //EventBus:https://github.com/greenrobot/EventBus/
     compile 'org.greenrobot:eventbus:3.0.0'
-    //截屏库:https://github.com/tarek360/InstaCapture
-    compile "com.github.tarek360:instacapture:1.2.2"
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
     //画板,https://github.com/vilyever/AndroidDrawingView
     compile 'com.github.vilyever:AndroidDrawingView:1.6.7'
     //颜色选择器:https://github.com/gzu-liyujiang/AndroidPicker
     compile 'cn.qqtheme.framework:ColorPicker:1.2.4'
+    //notification:https://github.com/halysongoncalves/Pugnotification
+    compile 'com.github.halysongoncalves:pugnotification:1.8.1'
+    //Butter Knife
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    //简单易用的处理Android M运行时权限的库,https://github.com/hongyangAndroid/MPermissions
+    apt 'com.zhy:mpermission-compiler:1.0.0'
+    compile 'com.zhy:mpermission-api:1.0.0'
+    //nice-spinner
+    compile project(':nice-spinner')
+    //二维码:https://github.com/yipianfengye/android-zxingLibrary
+    compile 'cn.yipianfengye.android:zxing-library:2.1'
 }

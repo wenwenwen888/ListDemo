@@ -7,6 +7,12 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:name=".activity.MyApplication"
         android:allowBackup="true"
@@ -14,26 +20,35 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.wyt.list.activity.MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.wyt.list.activity.SocketActivity" />
-        <activity android:name="com.wyt.list.activity.DrawingActivity" />
-        <activity android:name="com.wyt.list.activity.UnFileActivity" />
-        <activity android:name="com.wyt.list.activity.TimerActivity" />
-        <activity android:name="com.wyt.list.activity.MultiMediaActivity" />
-        <activity android:name="com.wyt.list.activity.DrawerLayoutActivity" />
-        <activity android:name="com.wyt.list.activity.CustomProgressBarActivity" />
+        <activity android:name=".activity.SocketActivity" />
+        <activity android:name=".activity.DrawingActivity" />
+        <activity android:name=".activity.UnFileActivity" />
+        <activity android:name=".activity.TimerActivity" />
+        <activity android:name=".activity.MultiMediaActivity" />
+        <activity android:name=".activity.DrawerLayoutActivity" />
+        <activity android:name=".activity.CustomProgressBarActivity" />
         <activity android:name=".activity.MPAndroidLineChartActivity" />
         <activity android:name=".activity.EventBusActivity" />
         <activity android:name=".activity.EventBusSecondActivity" />
         <activity android:name=".activity.RealmActivity" />
         <activity android:name=".activity.ScreenShotActivity" />
-
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.CustomSearchEditTextActivity" />
+        <activity android:name=".activity.SpinnerActivity" />
+        <activity android:name=".activity.AssetsApkActivity" />
+        <activity android:name=".activity.ProgressDialogActivity" />
+        <activity android:name=".activity.QRCodeActivity" />
+        <activity android:name=".activity.WatchActivity" />
+        <activity android:name=".activity.WatchSecondActivity" />
+        <activity android:name=".activity.WatchThirdActivity" />
+        <activity android:name=".activity.AnimationActivity"></activity>
     </application>
 
 </manifest>

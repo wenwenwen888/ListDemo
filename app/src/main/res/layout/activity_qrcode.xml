@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyt.list.activity.QRCodeActivity">
+
+    <Button
+        android:id="@+id/scanner_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="扫描二维码"
+        android:textColor="@color/White" />
+
+    <EditText
+        android:id="@+id/et_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="输入文字"
+        android:singleLine="true"
+        android:textColor="@color/color444"
+        android:textColorHint="@color/color999"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/create_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="生成二维码"
+        android:textColor="@color/White" />
+
+    <ImageView
+        android:id="@+id/qrcodeimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp" />
+
+</LinearLayout>
