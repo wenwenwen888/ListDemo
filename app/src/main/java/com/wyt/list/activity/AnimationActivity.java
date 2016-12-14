@@ -20,8 +20,17 @@ public class AnimationActivity extends AppCompatActivity {
     Button startTranslate;
     @BindView(R.id.arrow)
     ImageView arrow;
+    @BindView(R.id.start_alpha)
+    Button startAlpha;
+    @BindView(R.id.start_rotate)
+    Button startRotate;
+    @BindView(R.id.start_scale)
+    Button startScale;
 
-    private Animation myanimation;
+    private Animation translateAnimation;
+    private Animation alphaAnimation;
+    private Animation rotateAnimation;
+    private Animation scaleAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,25 +39,38 @@ public class AnimationActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         setTitle(getIntent().getStringExtra("title"));
 
-        myanimation = AnimationUtils.loadAnimation(this, R.anim.translate);
-        myanimation.setAnimationListener(new myAnimationListener());
+        translateAnimation = AnimationUtils.loadAnimation(this, R.anim.translate);
+//        translateAnimation.setAnimationListener(new myAnimationListener());
 
     }
 
-    @OnClick(R.id.start_translate)
-    public void onClick() {
-        arrow.startAnimation(myanimation);
+    @OnClick({R.id.start_translate, R.id.start_alpha, R.id.start_rotate, R.id.start_scale})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.start_translate:
+                arrow.startAnimation(translateAnimation);
+                break;
+            case R.id.start_alpha:
+                arrow.startAnimation(AnimationUtils.loadAnimation(this, R.anim.alpha));
+                break;
+            case R.id.start_rotate:
+                arrow.startAnimation(AnimationUtils.loadAnimation(this, R.anim.rotate));
+                break;
+            case R.id.start_scale:
+                arrow.startAnimation(AnimationUtils.loadAnimation(this, R.anim.scale));
+                break;
+        }
     }
 
     private class myAnimationListener implements Animation.AnimationListener {
         @Override
         public void onAnimationStart(Animation animation) {
-            arrow.setVisibility(View.GONE);
+
         }
 
         @Override
         public void onAnimationEnd(Animation animation) {
-
+            arrow.setVisibility(View.GONE);
         }
 
         @Override

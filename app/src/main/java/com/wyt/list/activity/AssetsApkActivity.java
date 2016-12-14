@@ -26,7 +26,7 @@ public class AssetsApkActivity extends AppCompatActivity {
     @BindView(R.id.install)
     Button install;
 
-    private String FILEPATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/中山职院.apk";
+    private String FILEPATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/zspt.apk";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class AssetsApkActivity extends AppCompatActivity {
 
     @OnClick(R.id.install)
     public void onClick() {
-        if (copyApkFromAssets(this, "中山职院.apk", FILEPATH)) {
+        if (copyApkFromAssets(this, "zspt.apk", FILEPATH)) {
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.setDataAndType(Uri.parse("file://" + FILEPATH), "application/vnd.android.package-archive");
