@@ -2,6 +2,7 @@ package com.wyt.list.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -15,6 +16,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class AnimationActivity extends AppCompatActivity {
+
+    private static final String TAG = "AnimationActivity";
 
     @BindView(R.id.start_translate)
     Button startTranslate;
@@ -40,7 +43,16 @@ public class AnimationActivity extends AppCompatActivity {
         setTitle(getIntent().getStringExtra("title"));
 
         translateAnimation = AnimationUtils.loadAnimation(this, R.anim.translate);
-//        translateAnimation.setAnimationListener(new myAnimationListener());
+        translateAnimation.setAnimationListener(new myAnimationListener());
+
+        alphaAnimation = AnimationUtils.loadAnimation(this, R.anim.alpha);
+        alphaAnimation.setAnimationListener(new myAnimationListener());
+
+        rotateAnimation = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        rotateAnimation.setAnimationListener(new myAnimationListener());
+
+        scaleAnimation = AnimationUtils.loadAnimation(this, R.anim.scale);
+        scaleAnimation.setAnimationListener(new myAnimationListener());
 
     }
 
@@ -51,13 +63,13 @@ public class AnimationActivity extends AppCompatActivity {
                 arrow.startAnimation(translateAnimation);
                 break;
             case R.id.start_alpha:
-                arrow.startAnimation(AnimationUtils.loadAnimation(this, R.anim.alpha));
+                arrow.startAnimation(alphaAnimation);
                 break;
             case R.id.start_rotate:
-                arrow.startAnimation(AnimationUtils.loadAnimation(this, R.anim.rotate));
+                arrow.startAnimation(rotateAnimation);
                 break;
             case R.id.start_scale:
-                arrow.startAnimation(AnimationUtils.loadAnimation(this, R.anim.scale));
+                arrow.startAnimation(scaleAnimation);
                 break;
         }
     }
@@ -65,17 +77,17 @@ public class AnimationActivity extends AppCompatActivity {
     private class myAnimationListener implements Animation.AnimationListener {
         @Override
         public void onAnimationStart(Animation animation) {
-
+            Log.e(TAG, "onAnimationStart: onAnimationStart");
         }
 
         @Override
         public void onAnimationEnd(Animation animation) {
-            arrow.setVisibility(View.GONE);
+            Log.e(TAG, "onAnimationStart: onAnimationEnd");
         }
 
         @Override
         public void onAnimationRepeat(Animation animation) {
-
+            Log.e(TAG, "onAnimationStart: onAnimationRepeat");
         }
     }
 }
