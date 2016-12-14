@@ -2,7 +2,7 @@
 所有Demo仅用于个人测试</br>
 `一个伟大的项目, 都是源自于一个个小小的demo~`
 
-### 1,Socket Demo
+## 1,Socket Demo
 一个socket通信的简单demo,支持断开重连</br>
 此demo引用了[这里的Socket封装库](https://github.com/vilyever/AndroidSocketClient)并作了自己的业务修改</br>
 main file or mian code
@@ -16,7 +16,7 @@ main file or mian code
 
 
 
-### 2,Unfile Demo
+## 2,Unfile Demo
 用于解压文件(内含删除整个文件夹的功能)</br>
 main file or mian code
 ----
@@ -98,26 +98,26 @@ main file or mian code
     }
 ```
 
-### 3,Timer Demo
+## 3,Timer Demo
 一个简单的倒计时demo</br>
 main file or mian code
 ----
 [TimerActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/TimerActivity.java)</br>
 
-### 4,MultiMedia Demo
+## 4,MultiMedia Demo
 有关多媒体Demo(暂时有拍照与从相册选照片)</br>
 main file or mian code
 ----
 [MultiMediaActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MultiMediaActivity.java)</br>
 
-#### 5,DrawerLayout Demo
+## 5,DrawerLayout Demo
 官方控件DrawerLayout的简单使用</br>
 `-------------------相关文件或代码-------------------`</br>
 [DrawerLayoutActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawerLayoutActivity.java)</br>
 [activity_drawerlayout.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/layout/activity_drawerlayout.xml)</br>
 
 
-### 6,CustomProgressBar Demo
+## 6,CustomProgressBar Demo
 一个自定义进度条</br>
 >* 示例图 : </br>
 <img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/2.png" width="50%" height="50%"></br>
@@ -151,7 +151,7 @@ style.xml:
 [shape_progressbar_bg.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/drawable/shape_progressbar_bg.xml)</br>
 
 
-### 7,MPAndroidLineChart Demo
+## 7,MPAndroidLineChart Demo
 基于MPAndroidChart的一个折线图</br>
 >* 示例图 : </br>
 <img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/1.png" width="50%" height="50%">
@@ -161,7 +161,7 @@ main file or mian code
 ----
 [MPAndroidLineChartActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MPAndroidLineChartActivity.java)</br>
 
-### 8,EventBus Demo
+## 8,EventBus Demo
 EventBus的简单使用</br>
 [这里是EventBus的地址](https://github.com/greenrobot/EventBus)</br>
 main file or mian code
@@ -169,21 +169,21 @@ main file or mian code
 [EventBusActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusActivity.java)</br>
 [EventBusSecondActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusSecondActivity.java)</br>
 
-### 9,Realm Demo
+## 9,Realm Demo
 Realm数据库的简单使用</br>
 [Realm for Android详细教程](http://www.jianshu.com/p/28912c2f31db)</br>
 main file or mian code
 ----
 [RealmActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/RealmActivity.java)</br>
 
-### 10,ScreenShot Demo
+## 10,ScreenShot Demo
 一个简单的截屏工具</br>
 [这里是截屏库的地址](https://github.com/tarek360/InstaCapture)</br>
 main file or mian code
 ----
 [ScreenShotActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/ScreenShotActivity.java)</br>
 
-### 11,Drawing Demo
+## 11,Drawing Demo
 一个画板(可以弹出颜色选择器选择画笔颜色)</br>
 [这里是画板的地址](https://github.com/vilyever/AndroidDrawingView)</br>
 [这里是颜色选择器的地址](https://github.com/gzu-liyujiang/AndroidPicker)</br>
@@ -191,7 +191,7 @@ main file or mian code
 ----
 [DrawingActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawingActivity.java)</br>
 
-### 12,Notification Demo
+## 12,Notification Demo
 Notification广播简单使用</br>
 [这里是引用notification库的地址](https://github.com/halysongoncalves/Pugnotification)</br>
 main file or mian code
@@ -210,11 +210,11 @@ PugNotification.with(context)
 ```
 </br>
 
-### 13,CustomSearchEditText Demo
+## 13,CustomSearchEditText Demo
 一个自定义搜索框</br>
 [这里是自定义搜索框的地址](https://github.com/wenwenwen888/SearchEditTextDemo)</br>
 
-### 14,Spinner Demo(nice-spinner)
+## 14,Spinner Demo(nice-spinner)
 一个自定义的spinner</br>
 [这里是nice_spinner的开源地址](https://github.com/arcadefire/nice-spinner)</br>
 main file or mian code
