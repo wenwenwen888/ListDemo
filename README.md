@@ -112,7 +112,8 @@ main file or mian code
 
 ## 5,DrawerLayout Demo
 官方控件DrawerLayout的简单使用</br>
-`-------------------相关文件或代码-------------------`</br>
+main file or mian code
+----
 [DrawerLayoutActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawerLayoutActivity.java)</br>
 [activity_drawerlayout.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/layout/activity_drawerlayout.xml)</br>
 
