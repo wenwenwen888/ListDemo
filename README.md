@@ -1,12 +1,14 @@
 # ListDemo
 所有Demo仅用于个人测试</br>
-`一个伟大的项目, 都是源自于一个个小小的demo~`
+
+一个伟大的项目, 都是源自于一个个小小的demo~
 
 ## 1,Socket Demo
 一个socket通信的简单demo,支持断开重连</br>
 此demo引用了[这里的Socket封装库](https://github.com/vilyever/AndroidSocketClient)并作了自己的业务修改</br>
-main file or mian code
-----
+
+--------------------------主要文件或代码--------------------------
+
 主文件 : [SocketActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/SocketActivity.java)</br>
 库文件 : [socketclient](https://github.com/wenwenwen888/ListDemo/tree/master/app/src/main/java/com/wyt/list/socketclient)</br>
 两个工具类:</br>
