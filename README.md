@@ -1,11 +1,14 @@
 # ListDemo
 所有Demo仅用于个人测试</br>
-`一个伟大的项目, 都是源自于一个个小小的demo~`
 
-#### 1,Socket Demo
+一个伟大的项目, 都是源自于一个个小小的demo~
+
+## 1,Socket Demo
 一个socket通信的简单demo,支持断开重连</br>
 此demo引用了[这里的Socket封装库](https://github.com/vilyever/AndroidSocketClient)并作了自己的业务修改</br>
-`-------------------相关文件与代码-------------------`</br>
+
+--------------------------主要文件或代码--------------------------
+
 主文件 : [SocketActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/SocketActivity.java)</br>
 库文件 : [socketclient](https://github.com/wenwenwen888/ListDemo/tree/master/app/src/main/java/com/wyt/list/socketclient)</br>
 两个工具类:</br>
@@ -15,10 +18,14 @@
 
 
 
-#### 2,Unfile Demo
+## 2,Unfile Demo
 用于解压文件(内含删除整个文件夹的功能)</br>
-`-------------------相关文件与代码-------------------`</br>
-主文件 : [UnFileActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/UnFileActivity.java)</br>
+
+
+--------------------------主要文件或代码--------------------------
+
+
+[UnFileActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/UnFileActivity.java)</br>
 解压文件库 : [ZipEntry.jar]
 (https://github.com/wenwenwen888/ListDemo/blob/master/app/libs/ZipEntry.jar)
 </br>
@@ -96,29 +103,44 @@
     }
 ```
 
-#### 3,Timer Demo
+## 3,Timer Demo
 一个简单的倒计时demo</br>
-`-------------------相关文件与代码-------------------`</br>
-主文件 : [TimerActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/TimerActivity.java)</br>
 
-#### 4,MultiMedia Demo
+
+--------------------------主要文件或代码--------------------------
+
+
+[TimerActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/TimerActivity.java)</br>
+
+## 4,MultiMedia Demo
 有关多媒体Demo(暂时有拍照与从相册选照片)</br>
-`-------------------相关文件与代码-------------------`</br>
-主文件 : [MultiMediaActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MultiMediaActivity.java)</br>
 
-#### 5,DrawerLayout Demo
+
+--------------------------主要文件或代码--------------------------
+
+
+[MultiMediaActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MultiMediaActivity.java)</br>
+
+## 5,DrawerLayout Demo
 官方控件DrawerLayout的简单使用</br>
-`-------------------相关文件与代码-------------------`</br>
-主文件 : [DrawerLayoutActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawerLayoutActivity.java)</br>
-布局文件 : [activity_drawerlayout.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/layout/activity_drawerlayout.xml)</br>
 
 
-#### 6,CustomProgressBar Demo
+--------------------------主要文件或代码--------------------------
+
+
+[DrawerLayoutActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawerLayoutActivity.java)</br>
+[activity_drawerlayout.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/layout/activity_drawerlayout.xml)</br>
+
+
+## 6,CustomProgressBar Demo
 一个自定义进度条</br>
 >* 示例图 : </br>
 <img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/2.png" width="50%" height="50%"></br>
 
-`-------------------相关文件与代码-------------------`</br>
+
+--------------------------主要文件或代码--------------------------
+
+
 </br>
 activity_customprogressbar.xml:
 ```java
@@ -146,38 +168,102 @@ style.xml:
 [shape_progressbar_bg.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/drawable/shape_progressbar_bg.xml)</br>
 
 
-#### 7,MPAndroidLineChart Demo
+## 7,MPAndroidLineChart Demo
 基于MPAndroidChart的一个折线图</br>
 >* 示例图 : </br>
 <img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/1.png" width="50%" height="50%">
 
 [这里是MPAndroidChart的地址](https://github.com/PhilJay/MPAndroidChart)</br>
-`-------------------相关文件与代码-------------------`</br>
-主文件 : [MPAndroidLineChartActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MPAndroidLineChartActivity.java)</br>
 
-#### 8,EventBus Demo
+
+--------------------------主要文件或代码--------------------------
+
+
+[MPAndroidLineChartActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MPAndroidLineChartActivity.java)</br>
+
+## 8,EventBus Demo
 EventBus的简单使用</br>
 [这里是EventBus的地址](https://github.com/greenrobot/EventBus)</br>
-`-------------------相关文件与代码-------------------`</br>
-主文件 : [EventBusActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusActivity.java)</br>
+
+
+--------------------------主要文件或代码--------------------------
+
+
+[EventBusActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusActivity.java)</br>
 [EventBusSecondActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusSecondActivity.java)</br>
 
-#### 9,Realm Demo
+## 9,Realm Demo
 Realm数据库的简单使用</br>
 [Realm for Android详细教程](http://www.jianshu.com/p/28912c2f31db)</br>
-`-------------------相关文件与代码-------------------`</br>
-主文件 : [RealmActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/RealmActivity.java)</br>
 
-#### 10,ScreenShot Demo
+
+--------------------------主要文件或代码--------------------------
+
+
+[RealmActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/RealmActivity.java)</br>
+
+## 10,ScreenShot Demo
 一个简单的截屏工具</br>
 [这里是截屏库的地址](https://github.com/tarek360/InstaCapture)</br>
-`-------------------相关文件与代码-------------------`</br>
-主文件 : [ScreenShotActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/ScreenShotActivity.java)</br>
 
-#### 11,Drawing Demo
+
+--------------------------主要文件或代码--------------------------
+
+
+[ScreenShotActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/ScreenShotActivity.java)</br>
+
+## 11,Drawing Demo
 一个画板(可以弹出颜色选择器选择画笔颜色)</br>
 [这里是画板的地址](https://github.com/vilyever/AndroidDrawingView)</br>
 [这里是颜色选择器的地址](https://github.com/gzu-liyujiang/AndroidPicker)</br>
-`-------------------相关文件与代码-------------------`</br>
-主文件 : [DrawingActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawingActivity.java)</br>
 
+
+--------------------------主要文件或代码--------------------------
+
+
+[DrawingActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawingActivity.java)</br>
+
+## 12,Notification Demo
+Notification广播简单使用</br>
+[这里是引用notification库的地址](https://github.com/halysongoncalves/Pugnotification)</br>
+
+
+--------------------------主要文件或代码--------------------------
+
+
+```
+PugNotification.with(context)
+                .load()
+                .title(title)       //title
+                .message(message)   //content
+                .smallIcon(R.drawable.ic_notifications)     //smallicon
+                .largeIcon(R.drawable.ic_notifications)     //largeicon
+                .flags(Notification.DEFAULT_ALL)
+                .autoCancel(true)           //点击取消
+                .simple()
+                .build();
+```
+</br>
+
+## 13,CustomSearchEditText Demo
+一个自定义搜索框</br>
+[这里是自定义搜索框的地址](https://github.com/wenwenwen888/SearchEditTextDemo)</br>
+
+## 14,Spinner Demo(nice-spinner)
+一个自定义的spinner</br>
+[这里是nice_spinner的开源地址](https://github.com/arcadefire/nice-spinner)</br>
+
+
+--------------------------主要文件或代码--------------------------
+
+
+[SpinnerActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/SpinnerActivity.java)</br>
+```
+<org.angmarch.views.NiceSpinner
+        android:id="@+id/nicespinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:backgroundSelector="@drawable/gray_border_bg"
+        app:textTint="@color/colorBlack" />
+```
