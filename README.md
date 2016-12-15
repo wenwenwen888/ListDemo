@@ -7,11 +7,11 @@
 一个socket通信的简单demo,支持断开重连</br>
 此demo引用了[这里的Socket封装库](https://github.com/vilyever/AndroidSocketClient)并作了自己的业务修改</br>
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
-主文件 : [SocketActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/SocketActivity.java)</br>
-库文件 : [socketclient](https://github.com/wenwenwen888/ListDemo/tree/master/app/src/main/java/com/wyt/list/socketclient)</br>
-两个工具类:</br>
+* 主文件 : [SocketActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/SocketActivity.java)</br>
+* 库文件 : [socketclient](https://github.com/wenwenwen888/ListDemo/tree/master/app/src/main/java/com/wyt/list/socketclient)</br>
+* 两个工具类:</br>
 [ClientSocket.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/util/ClientSocket.java)</br>
 [SingleSocket.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/util/SingleSocket.java)</br>
 
@@ -22,13 +22,13 @@
 用于解压文件(内含删除整个文件夹的功能)</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[UnFileActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/UnFileActivity.java)</br>
-解压文件库 : [ZipEntry.jar]
-(https://github.com/wenwenwen888/ListDemo/blob/master/app/libs/ZipEntry.jar)
+* [UnFileActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/UnFileActivity.java)</br>
+* 解压文件库 : [ZipEntry.jar](https://github.com/wenwenwen888/ListDemo/blob/master/app/libs/ZipEntry.jar)
 </br>
+
 >* 解压文件代码如下:
 ```Java
     /**
@@ -107,29 +107,29 @@
 一个简单的倒计时demo</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[TimerActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/TimerActivity.java)</br>
+* [TimerActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/TimerActivity.java)</br>
 
 ## 4,MultiMedia Demo
 有关多媒体Demo(暂时有拍照与从相册选照片)</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[MultiMediaActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MultiMediaActivity.java)</br>
+* [MultiMediaActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MultiMediaActivity.java)</br>
 
 ## 5,DrawerLayout Demo
 官方控件DrawerLayout的简单使用</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[DrawerLayoutActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawerLayoutActivity.java)</br>
-[activity_drawerlayout.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/layout/activity_drawerlayout.xml)</br>
+* [DrawerLayoutActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawerLayoutActivity.java)</br>
+* [activity_drawerlayout.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/layout/activity_drawerlayout.xml)</br>
 
 
 ## 6,CustomProgressBar Demo
@@ -138,11 +138,11 @@
 <img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/2.png" width="50%" height="50%"></br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
 </br>
-activity_customprogressbar.xml:
+* activity_customprogressbar.xml:
 ```java
     <ProgressBar
         android:id="@+id/progressBar"
@@ -154,7 +154,7 @@ activity_customprogressbar.xml:
         android:max="100"
         android:progress="50" />
 ```
-style.xml:
+* style.xml:
 ```java
       <style name="StyleProgressBarMini" parent="@android:style/Widget.ProgressBar.Horizontal">
         <item name="android:maxHeight">50dip</item>
@@ -164,8 +164,8 @@ style.xml:
         <item name="android:progressDrawable">@drawable/shape_progressbar_mini</item>
     </style>
 ```
-[shape_progressbar_mini.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/drawable/shape_progressbar_mini.xml)</br>
-[shape_progressbar_bg.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/drawable/shape_progressbar_bg.xml)</br>
+* [shape_progressbar_mini.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/drawable/shape_progressbar_mini.xml)</br>
+* [shape_progressbar_bg.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/drawable/shape_progressbar_bg.xml)</br>
 
 
 ## 7,MPAndroidLineChart Demo
@@ -176,41 +176,41 @@ style.xml:
 [这里是MPAndroidChart的地址](https://github.com/PhilJay/MPAndroidChart)</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[MPAndroidLineChartActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MPAndroidLineChartActivity.java)</br>
+* [MPAndroidLineChartActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MPAndroidLineChartActivity.java)</br>
 
 ## 8,EventBus Demo
 EventBus的简单使用</br>
 [这里是EventBus的地址](https://github.com/greenrobot/EventBus)</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[EventBusActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusActivity.java)</br>
-[EventBusSecondActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusSecondActivity.java)</br>
+* [EventBusActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusActivity.java)</br>
+* [EventBusSecondActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusSecondActivity.java)</br>
 
 ## 9,Realm Demo
 Realm数据库的简单使用</br>
 [Realm for Android详细教程](http://www.jianshu.com/p/28912c2f31db)</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[RealmActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/RealmActivity.java)</br>
+* [RealmActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/RealmActivity.java)</br>
 
 ## 10,ScreenShot Demo
 一个简单的截屏工具</br>
 [这里是截屏库的地址](https://github.com/tarek360/InstaCapture)</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[ScreenShotActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/ScreenShotActivity.java)</br>
+* [ScreenShotActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/ScreenShotActivity.java)</br>
 
 ## 11,Drawing Demo
 一个画板(可以弹出颜色选择器选择画笔颜色)</br>
@@ -218,17 +218,17 @@ Realm数据库的简单使用</br>
 [这里是颜色选择器的地址](https://github.com/gzu-liyujiang/AndroidPicker)</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[DrawingActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawingActivity.java)</br>
+* [DrawingActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawingActivity.java)</br>
 
 ## 12,Notification Demo
 Notification广播简单使用</br>
 [这里是引用notification库的地址](https://github.com/halysongoncalves/Pugnotification)</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
 ```
@@ -254,10 +254,10 @@ PugNotification.with(context)
 [这里是nice_spinner的开源地址](https://github.com/arcadefire/nice-spinner)</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[SpinnerActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/SpinnerActivity.java)</br>
+* [SpinnerActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/SpinnerActivity.java)</br>
 ```
 <org.angmarch.views.NiceSpinner
         android:id="@+id/nicespinner"
@@ -273,11 +273,12 @@ PugNotification.with(context)
 原理:把要安装的APK文件放在assets文件夹,然后要安装的时候是先复制到本地内存,然后再安装「为什么会有如此流氓的软件」
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[AssetsApkActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/AssetsApkActivity.java)</br>
-复制assets文件夹文件到本地
+* [AssetsApkActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/AssetsApkActivity.java)</br>
+
+* 复制assets文件夹文件到本地
 ```java
 public boolean copyApkFromAssets(Context context, String fileName, String path) {
         boolean copyIsFinish = false;
@@ -300,7 +301,8 @@ public boolean copyApkFromAssets(Context context, String fileName, String path) 
         return copyIsFinish;
     }
 ```
-安装APK
+
+* 安装APK
 ```java
 Intent intent = new Intent(Intent.ACTION_VIEW);
 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -314,14 +316,14 @@ startActivity(intent);
 > 示例图 : </br>
 <img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/3.gif" width="30%" height="30%">
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[ProgressDialogActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/ProgressDialogActivity.java)</br>
-[CustomProgressDialog.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/assist/CustomProgressDialog.java)</br>
-[progress_dialog.xml]
+* [ProgressDialogActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/ProgressDialogActivity.java)</br>
+* [CustomProgressDialog.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/assist/CustomProgressDialog.java)</br>
+* [progress_dialog.xml]
 (https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/layout/progress_dialog.xml)</br>
-add to style.xml
+* add to style.xml
 ```java
 <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
         <item name="android:backgroundDimEnabled">true</item>       //true-背景变暗,false-背景不变暗
@@ -338,36 +340,36 @@ add to style.xml
 <img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/4.png" width="30%" height="30%">
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[QRCodeActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/QRCodeActivity.java)</br>
+* [QRCodeActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/QRCodeActivity.java)</br>
 
 
 ## 18,WatchActivity Demo
 观察者模式demo</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[WatchActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/WatchActivity.java)</br>
-[WatchSecondActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/WatchSecondActivity.java)</br>
-[WatchThirdActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/WatchThirdActivity.java)</br>
+* [WatchActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/WatchActivity.java)</br>
+* [WatchSecondActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/WatchSecondActivity.java)</br>
+* [WatchThirdActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/WatchThirdActivity.java)</br>
 
 ## 19,AnimationActivity Demo
 动画animation的初认识demo</br>
 
 
---------------------------主要文件或代码--------------------------
+####--------------------------主要文件或代码--------------------------
 
 
-[AnimationActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/AnimationActivity.java)</br>
-[移动动画效果translate.xml]
+* [AnimationActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/AnimationActivity.java)</br>
+* [移动动画效果translate.xml]
 (https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/anim/translate.xml)</br>
-[尺寸伸缩动画效果scale.xml]
+* [尺寸伸缩动画效果scale.xml]
 (https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/anim/scale.xml)</br>
-[旋转动画效果rotate.xml]
+* [旋转动画效果rotate.xml]
 (https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/anim/rotate.xml)</br>
-[透明度控制动画效果alpha.xml]
+* [透明度控制动画效果alpha.xml]
 (https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/anim/alpha.xml)</br>
