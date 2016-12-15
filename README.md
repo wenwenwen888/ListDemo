@@ -267,3 +267,107 @@ PugNotification.with(context)
         app:backgroundSelector="@drawable/gray_border_bg"
         app:textTint="@color/colorBlack" />
 ```
+
+## 15,AssetsApk Demo
+从Assets文件夹安装APK</br>
+原理:把要安装的APK文件放在assets文件夹,然后要安装的时候是先复制到本地内存,然后再安装「为什么会有如此流氓的软件」
+
+
+--------------------------主要文件或代码--------------------------
+
+
+[AssetsApkActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/AssetsApkActivity.java)</br>
+复制assets文件夹文件到本地
+```java
+public boolean copyApkFromAssets(Context context, String fileName, String path) {
+        boolean copyIsFinish = false;
+        try {
+            InputStream is = context.getAssets().open(fileName);
+            File file = new File(path);
+            file.createNewFile();
+            FileOutputStream fos = new FileOutputStream(file);
+            byte[] temp = new byte[1024];
+            int i;
+            while ((i = is.read(temp)) > 0) {
+                fos.write(temp, 0, i);
+            }
+            fos.close();
+            is.close();
+            copyIsFinish = true;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return copyIsFinish;
+    }
+```
+安装APK
+```java
+Intent intent = new Intent(Intent.ACTION_VIEW);
+intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+intent.setDataAndType(Uri.parse("file://" + FILEPATH), "application/vnd.android.package-archive");
+startActivity(intent);
+```
+
+
+## 16,ProgressDialog Demo
+自定义ProgressDialog</br>
+> 示例图 : </br>
+<img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/3.gif" width="30%" height="30%">
+
+--------------------------主要文件或代码--------------------------
+
+
+[ProgressDialogActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/ProgressDialogActivity.java)</br>
+[CustomProgressDialog.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/assist/CustomProgressDialog.java)</br>
+[progress_dialog.xml]
+(https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/layout/progress_dialog.xml)</br>
+add to style.xml
+```java
+<style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">true</item>       //true-背景变暗,false-背景不变暗
+        <item name="colorAccent">@color/colorAccent</item>          //加载图标颜色
+        <item name="android:windowBackground">@android:color/transparent</item>    //背景透明
+</style>
+```
+
+## 17,QRCode Demo
+二维码demo</br>
+[这里是zxing的开源地址](https://github.com/zxing/zxing)</br>
+[这里是基于zxing二次开发的一个开源库地址](https://github.com/yipianfengye/android-zxingLibrary)</br>
+> 示例图 : </br>
+<img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/4.png" width="30%" height="30%">
+
+
+--------------------------主要文件或代码--------------------------
+
+
+[QRCodeActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/QRCodeActivity.java)</br>
+
+
+## 18,WatchActivity Demo
+观察者模式demo</br>
+
+
+--------------------------主要文件或代码--------------------------
+
+
+[WatchActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/WatchActivity.java)</br>
+[WatchSecondActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/WatchSecondActivity.java)</br>
+[WatchThirdActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/WatchThirdActivity.java)</br>
+
+## 19,AnimationActivity Demo
+动画animation的初认识demo</br>
+
+
+--------------------------主要文件或代码--------------------------
+
+
+[AnimationActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/AnimationActivity.java)</br>
+[移动动画效果translate.xml]
+(https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/anim/translate.xml)</br>
+[尺寸伸缩动画效果scale.xml]
+(https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/anim/scale.xml)</br>
+[旋转动画效果rotate.xml]
+(https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/anim/rotate.xml)</br>
+[透明度控制动画效果alpha.xml]
+(https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/anim/alpha.xml)</br>
