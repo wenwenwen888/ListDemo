@@ -20,8 +20,11 @@
 
 ## 2,Unfile Demo
 用于解压文件(内含删除整个文件夹的功能)</br>
-main file or mian code
-----
+
+
+--------------------------主要文件或代码--------------------------
+
+
 [UnFileActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/UnFileActivity.java)</br>
 解压文件库 : [ZipEntry.jar]
 (https://github.com/wenwenwen888/ListDemo/blob/master/app/libs/ZipEntry.jar)
@@ -102,20 +105,29 @@ main file or mian code
 
 ## 3,Timer Demo
 一个简单的倒计时demo</br>
-main file or mian code
-----
+
+
+--------------------------主要文件或代码--------------------------
+
+
 [TimerActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/TimerActivity.java)</br>
 
 ## 4,MultiMedia Demo
 有关多媒体Demo(暂时有拍照与从相册选照片)</br>
-main file or mian code
-----
+
+
+--------------------------主要文件或代码--------------------------
+
+
 [MultiMediaActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MultiMediaActivity.java)</br>
 
 ## 5,DrawerLayout Demo
 官方控件DrawerLayout的简单使用</br>
-main file or mian code
-----
+
+
+--------------------------主要文件或代码--------------------------
+
+
 [DrawerLayoutActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawerLayoutActivity.java)</br>
 [activity_drawerlayout.xml](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/layout/activity_drawerlayout.xml)</br>
 
@@ -125,8 +137,10 @@ main file or mian code
 >* 示例图 : </br>
 <img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/2.png" width="50%" height="50%"></br>
 
-main file or mian code
-----
+
+--------------------------主要文件或代码--------------------------
+
+
 </br>
 activity_customprogressbar.xml:
 ```java
@@ -160,45 +174,63 @@ style.xml:
 <img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/1.png" width="50%" height="50%">
 
 [这里是MPAndroidChart的地址](https://github.com/PhilJay/MPAndroidChart)</br>
-main file or mian code
-----
+
+
+--------------------------主要文件或代码--------------------------
+
+
 [MPAndroidLineChartActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/MPAndroidLineChartActivity.java)</br>
 
 ## 8,EventBus Demo
 EventBus的简单使用</br>
 [这里是EventBus的地址](https://github.com/greenrobot/EventBus)</br>
-main file or mian code
-----
+
+
+--------------------------主要文件或代码--------------------------
+
+
 [EventBusActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusActivity.java)</br>
 [EventBusSecondActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/EventBusSecondActivity.java)</br>
 
 ## 9,Realm Demo
 Realm数据库的简单使用</br>
 [Realm for Android详细教程](http://www.jianshu.com/p/28912c2f31db)</br>
-main file or mian code
-----
+
+
+--------------------------主要文件或代码--------------------------
+
+
 [RealmActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/RealmActivity.java)</br>
 
 ## 10,ScreenShot Demo
 一个简单的截屏工具</br>
 [这里是截屏库的地址](https://github.com/tarek360/InstaCapture)</br>
-main file or mian code
-----
+
+
+--------------------------主要文件或代码--------------------------
+
+
 [ScreenShotActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/ScreenShotActivity.java)</br>
 
 ## 11,Drawing Demo
 一个画板(可以弹出颜色选择器选择画笔颜色)</br>
 [这里是画板的地址](https://github.com/vilyever/AndroidDrawingView)</br>
 [这里是颜色选择器的地址](https://github.com/gzu-liyujiang/AndroidPicker)</br>
-main file or mian code
-----
+
+
+--------------------------主要文件或代码--------------------------
+
+
 [DrawingActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/DrawingActivity.java)</br>
 
 ## 12,Notification Demo
 Notification广播简单使用</br>
 [这里是引用notification库的地址](https://github.com/halysongoncalves/Pugnotification)</br>
-main file or mian code
----- 
+
+
+--------------------------主要文件或代码--------------------------
+
+
 ```
 PugNotification.with(context)
                 .load()
@@ -220,8 +252,11 @@ PugNotification.with(context)
 ## 14,Spinner Demo(nice-spinner)
 一个自定义的spinner</br>
 [这里是nice_spinner的开源地址](https://github.com/arcadefire/nice-spinner)</br>
-main file or mian code
-----
+
+
+--------------------------主要文件或代码--------------------------
+
+
 [SpinnerActivity.java](https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/java/com/wyt/list/activity/SpinnerActivity.java)</br>
 ```
 <org.angmarch.views.NiceSpinner
