@@ -1,12 +1,14 @@
 package com.wyt.list.activity;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
 
@@ -14,13 +16,18 @@ import com.wyt.list.R;
 import com.wyt.list.adapter.MainAdapter;
 import com.wyt.list.assist.IOnItemClickListener;
 import com.wyt.list.assist.SpaceItemDecoration;
+import com.zhy.adapter.recyclerview.wrapper.HeaderAndFooterWrapper;
 import com.zhy.m.permission.MPermissions;
 import com.zhy.m.permission.PermissionDenied;
 import com.zhy.m.permission.PermissionGrant;
 
 import java.util.ArrayList;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class MainActivity extends AppCompatActivity implements IOnItemClickListener {
+
+    private static final String TAG = "MainActivity";
 
     private RecyclerView list;
 
@@ -34,6 +41,11 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
     private static final int REQUECT_CODE_CAMERA = 0x01;
 
     @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -44,7 +56,17 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
         list.addItemDecoration(new SpaceItemDecoration(spacingInPixels, true));//间距
         initData();
         mainAdapter = new MainAdapter(this, names, tips);
-        list.setAdapter(mainAdapter);
+
+        HeaderAndFooterWrapper headerAndFooterWrapper = new HeaderAndFooterWrapper(mainAdapter);
+//        View headerview = LayoutInflater.from(this).inflate(R.layout.headerview, null);
+//        headerAndFooterWrapper.addHeaderView(headerview);
+        View footerView = LayoutInflater.from(this).inflate(R.layout.footerview, null);
+        headerAndFooterWrapper.addFootView(footerView);
+
+        list.setAdapter(headerAndFooterWrapper);
+        headerAndFooterWrapper.notifyDataSetChanged();
+
+//        list.setAdapter(mainAdapter);
         mainAdapter.setOnItemClickListener(this);
 
         //Android6.0以上要申请权限
@@ -94,6 +116,10 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
         tips.add("观察者模式demo");
         names.add("AnimationActivity Demo");
         tips.add("简单的动画效果");
+        names.add("ToolBar Demo");
+        tips.add("ToolBar初认识");
+        names.add("DoubleRecyclerView Demo");
+        tips.add("RecyclerView 嵌入 RecyclerView");
     }
 
     @Override
@@ -154,6 +180,12 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
                 break;
             case 18://AnimationActivity Demo
                 startActivity(AnimationActivity.class, names.get(position));
+                break;
+            case 19://ToolBarActivity Demo
+                startActivity(ToolBarActivity.class, names.get(position));
+                break;
+            case 20://DoubleRecyclerView Demo
+                startActivity(DoubleRecyclerViewActivity.class, names.get(position));
                 break;
             default:
                 break;

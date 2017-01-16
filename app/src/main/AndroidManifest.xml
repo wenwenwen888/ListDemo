@@ -48,7 +48,11 @@
         <activity android:name=".activity.WatchActivity" />
         <activity android:name=".activity.WatchSecondActivity" />
         <activity android:name=".activity.WatchThirdActivity" />
-        <activity android:name=".activity.AnimationActivity"></activity>
+        <activity android:name=".activity.AnimationActivity" />
+        <activity
+            android:name=".activity.ToolBarActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity android:name=".activity.DoubleRecyclerViewActivity"></activity>
     </application>
 
 </manifest>

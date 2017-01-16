@@ -65,4 +65,11 @@ dependencies {
     compile project(':nice-spinner')
     //二维码:https://github.com/yipianfengye/android-zxingLibrary
     compile 'cn.yipianfengye.android:zxing-library:2.1'
+    //圆角imageview
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //RecyclerView添加HeaderView和FooterView:https://github.com/hongyangAndroid/baseAdapter
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    //更改字体:https://github.com/chrisjenx/Calligraphy
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'com.wenwenwen888:searchbox:1.0.0'
 }

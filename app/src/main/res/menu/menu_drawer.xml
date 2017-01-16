@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_message_white_24dp"
+            android:title="Messages" />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_friend_white_24dp"
+            android:title="Friends" />
+        <item
+            android:id="@+id/nav_discussion"
+            android:icon="@drawable/ic_discusion_white_24dp"
+            android:title="Discussion" />
+    </group>
+
+    <!--需要给group设置id，才会出现分割线-->
+    <group
+        android:id="@+id/subitem"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_settings_white_24dp"
+            android:title="setting" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_about_white_24dp"
+            android:title="about" />
+    </group>
+
+</menu>
