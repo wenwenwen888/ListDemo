@@ -373,3 +373,16 @@ startActivity(intent);
 (https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/anim/rotate.xml)</br>
 * [透明度控制动画效果alpha.xml]
 (https://github.com/wenwenwen888/ListDemo/blob/master/app/src/main/res/anim/alpha.xml)</br>
+
+## 20,ToolBarActivity Demo
+Toolbar与NavigationView、DrawerLayout的使用</br>
+
+> 预览图 : </br>
+<img src="https://github.com/wenwenwen888/ListDemo/blob/master/preview/5.gif" width="30%" height="30%">
+
+
+## 21,DoubleRecyclerViewActivity Demo
+RecyclerView嵌套RecyclerView</br>
+
+
+
