@@ -1,1 +1,1 @@
-include ':app', ':searchedittext', ':nice-spinner'
+include ':app', ':searchedittext', ':nice-spinner', ':filepicker'

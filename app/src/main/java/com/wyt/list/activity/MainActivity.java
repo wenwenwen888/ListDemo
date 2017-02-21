@@ -122,6 +122,8 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
         tips.add("RecyclerView 嵌入 RecyclerView");
         names.add("CoordinatorLayoutActivity Demo");
         tips.add("CoordinatorLayout初认识");
+        names.add("MultiType-FilePicker Demo");
+        tips.add("一个文件选择库\nhttps://github.com/fishwjy/MultiType-FilePicker");
     }
 
     @Override
@@ -191,6 +193,9 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
                 break;
             case 21://CoordinatorLayoutActivity Demo
                 startActivity(CoordinatorLayoutActivity.class, names.get(position));
+                break;
+            case 22://FilePickerActivity Demo
+                startActivity(FilePickerActivity.class, names.get(position));
                 break;
             default:
                 break;

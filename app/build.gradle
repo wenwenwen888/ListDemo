@@ -72,4 +72,5 @@ dependencies {
     //更改字体:https://github.com/chrisjenx/Calligraphy
     compile 'uk.co.chrisjenx:calligraphy:2.2.0'
     compile 'com.wenwenwen888:searchbox:1.0.0'
+    compile project(':filepicker')
 }
