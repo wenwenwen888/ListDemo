@@ -52,7 +52,10 @@
         <activity
             android:name=".activity.ToolBarActivity"
             android:theme="@style/AppThemeNoActionBar" />
-        <activity android:name=".activity.DoubleRecyclerViewActivity"></activity>
+        <activity android:name=".activity.DoubleRecyclerViewActivity" />
+        <activity
+            android:name=".activity.CoordinatorLayoutActivity"
+            android:theme="@style/AppThemeNoActionBar" />
     </application>
 
 </manifest>

@@ -120,6 +120,8 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
         tips.add("ToolBar初认识");
         names.add("DoubleRecyclerView Demo");
         tips.add("RecyclerView 嵌入 RecyclerView");
+        names.add("CoordinatorLayoutActivity Demo");
+        tips.add("CoordinatorLayout初认识");
     }
 
     @Override
@@ -186,6 +188,9 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
                 break;
             case 20://DoubleRecyclerView Demo
                 startActivity(DoubleRecyclerViewActivity.class, names.get(position));
+                break;
+            case 21://CoordinatorLayoutActivity Demo
+                startActivity(CoordinatorLayoutActivity.class, names.get(position));
                 break;
             default:
                 break;
