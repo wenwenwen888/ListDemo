@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        barColorWhenSelected="#ff5381"
+        icon="@drawable/ic_home_black_24dp"
+        id="@+id/tab_home"
+        title="Home" />
+    <tab
+        barColorWhenSelected="#5F3F35"
+        icon="@drawable/ic_task_black_24dp"
+        id="@+id/tab_task"
+        title="Task" />
+    <tab
+        barColorWhenSelected="#802DA6"
+        icon="@drawable/ic_message_black_24dp"
+        id="@+id/tab_message"
+        title="Message" />
+    <tab
+        barColorWhenSelected="#ff6150"
+        icon="@drawable/ic_shop_black_24dp"
+        id="@+id/tab_shop"
+        title="Shop" />
+    <tab
+        barColorWhenSelected="#ff9600"
+        icon="@drawable/ic_me_black_24dp"
+        id="@+id/tab_me"
+        title="Me" />
+</tabs>

@@ -45,4 +45,7 @@
         <item name="color">#FFFFFF</item>
     </style>
 
+    <!--自定义 加了这个style系统导航栏颜色跟着变动-->
+    <style name="AppTheme.TransNav" parent="AppThemeNoActionBar" />
+
 </resources>

@@ -58,7 +58,11 @@
         <activity
             android:name=".activity.CoordinatorLayoutActivity"
             android:theme="@style/AppThemeNoActionBar" />
-        <activity android:name=".activity.FilePickerActivity"></activity>
+        <activity android:name=".activity.FilePickerActivity" />
+        <activity
+            android:name=".activity.BottomBarActivity"
+            android:theme="@style/AppTheme.TransNav" />
+        <activity android:name=".activity.AlbumActivity"></activity>
     </application>
 
 </manifest>

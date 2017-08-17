@@ -124,6 +124,10 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
         tips.add("CoordinatorLayout初认识");
         names.add("MultiType-FilePicker Demo");
         tips.add("一个文件选择库\nhttps://github.com/fishwjy/MultiType-FilePicker");
+        names.add("BottomBarActivity Demo");
+        tips.add("一个底部导航栏控件\nhttps://github.com/roughike/BottomBar");
+        names.add("AlbumActivity Demo");
+        tips.add("一款用于在Android设备上获取照片（拍照或从相册、文件中选择）、裁剪图片、压缩图片的开源工具库\nhttps://github.com/crazycodeboy/TakePhoto");
     }
 
     @Override
@@ -196,6 +200,12 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
                 break;
             case 22://FilePickerActivity Demo
                 startActivity(FilePickerActivity.class, names.get(position));
+                break;
+            case 23://BottomBarActivity Demo
+                startActivity(BottomBarActivity.class, names.get(position));
+                break;
+            case 24://AlbumActivity Demo
+                startActivity(AlbumActivity.class, names.get(position));
                 break;
             default:
                 break;

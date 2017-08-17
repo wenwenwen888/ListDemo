@@ -18,6 +18,15 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        /**
+         * 奔溃日志抓取
+         */
+        //简单的配置，采用这种方式配置时，崩溃日志只会存在本地，默认存在 'sdcard'/Android/data/'youPackageName'/files/crash/ ,
+        //当SD卡不存在或者状态异常时存贮在                          /data/data/'youPackageName'/crash/
+//        AECrashHelper.initCrashHandler(this);
+
+
         /**
          * Realm
          */

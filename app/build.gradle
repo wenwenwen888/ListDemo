@@ -30,16 +30,18 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:support-v4:24.2.1'
-    compile 'com.android.support:support-vector-drawable:24.2.1'
-    compile 'com.android.support:design:24.2.1'
-    testCompile 'junit:junit:4.12'
     //    //截屏库:https://github.com/tarek360/InstaCapture
     //    compile "com.github.tarek360:instacapture:1.2.2"
     //压缩包
     compile files('libs/ZipEntry.jar')
     //自定义搜索框
     compile project(':searchedittext')
+    //nice-spinner
+    compile project(':nice-spinner')
+    compile project(':filepicker')
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:support-vector-drawable:24.2.1'
+    compile 'com.android.support:design:24.2.1'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:recyclerview-v7:24.2.1'
     compile 'com.google.code.gson:gson:2.7'
@@ -72,5 +74,14 @@ dependencies {
     //更改字体:https://github.com/chrisjenx/Calligraphy
     compile 'uk.co.chrisjenx:calligraphy:2.2.0'
     compile 'com.wenwenwen888:searchbox:1.0.0'
-    compile project(':filepicker')
+    //奔溃日志:https://github.com/Mauiie/android-easy-crash-handle
+    compile 'com.mauiie.aech:AECrashHandler:0.0.1'
+    //底部导航控件:https://github.com/roughike/BottomBar
+    compile 'com.roughike:bottom-bar:2.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    testCompile 'junit:junit:4.12'
+    //简单易用的处理Android M运行时权限的库,https://github.com/hongyangAndroid/MPermissions
+    apt 'com.zhy:mpermission-compiler:1.0.0'
+    //TakePhoto:https://github.com/crazycodeboy/TakePhoto
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
 }
