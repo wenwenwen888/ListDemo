@@ -25,7 +25,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
 
 
     <application
@@ -36,6 +36,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:label">
+
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -78,12 +79,13 @@
             android:theme="@style/AppTheme.TransNav" />
         <activity android:name=".activity.AlbumActivity" />
         <activity android:name=".activity.MapActivity" />
+        <activity android:name=".activity.ZhihuMatisse" />
 
 
         <!--高德地图-->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="9adb5dfcac0f4ab152d341c8e3b1c9d2"/>
+            android:value="9adb5dfcac0f4ab152d341c8e3b1c9d2" />
 
     </application>
 

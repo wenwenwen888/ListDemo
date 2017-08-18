@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ListDemo.iml" filepath="$PROJECT_DIR$/ListDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/filepicker/filepicker.iml" filepath="$PROJECT_DIR$/filepicker/filepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matisse/matisse.iml" filepath="$PROJECT_DIR$/matisse/matisse.iml" />
       <module fileurl="file://$PROJECT_DIR$/nice-spinner/nice-spinner.iml" filepath="$PROJECT_DIR$/nice-spinner/nice-spinner.iml" />
       <module fileurl="file://$PROJECT_DIR$/searchedittext/searchedittext.iml" filepath="$PROJECT_DIR$/searchedittext/searchedittext.iml" />
     </modules>

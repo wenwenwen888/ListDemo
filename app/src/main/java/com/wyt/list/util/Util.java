@@ -1,6 +1,10 @@
 package com.wyt.list.util;
 
+import android.content.ContentResolver;
 import android.content.Context;
+import android.database.Cursor;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.text.format.DateFormat;
 import android.util.Base64;
 import android.util.Log;
@@ -70,20 +74,21 @@ public class Util {
 
     /**
      * 递归删除文件和文件夹
-     * @param file    要删除的根目录
+     *
+     * @param file 要删除的根目录
      */
-    public static void RecursionDeleteFile(File file){
-        if(file.isFile()){
+    public static void RecursionDeleteFile(File file) {
+        if (file.isFile()) {
             file.delete();
             return;
         }
-        if(file.isDirectory()){
+        if (file.isDirectory()) {
             File[] childFile = file.listFiles();
-            if(childFile == null || childFile.length == 0){
+            if (childFile == null || childFile.length == 0) {
                 file.delete();
                 return;
             }
-            for(File f : childFile){
+            for (File f : childFile) {
                 RecursionDeleteFile(f);
             }
             file.delete();
@@ -122,7 +127,7 @@ public class Util {
                     Log.e("upZipFileToTFcard", "fileParentDir:" + fileParentDir.getPath());
                     fileParentDir.mkdirs();
                 }
-                Log.e("upZipFileToTFcard" , "desFile:"+desFile.getPath());
+                Log.e("upZipFileToTFcard", "desFile:" + desFile.getPath());
                 desFile.createNewFile();
             }
             OutputStream out = new FileOutputStream(desFile);
@@ -146,4 +151,29 @@ public class Util {
         return result;
     }
 
+    /**
+     * Uri路径转系统文件路径
+     */
+    public static String getRealFilePath(final Context context, final Uri uri) {
+        if (null == uri) return null;
+        final String scheme = uri.getScheme();
+        String data = null;
+        if (scheme == null)
+            data = uri.getPath();
+        else if (ContentResolver.SCHEME_FILE.equals(scheme)) {
+            data = uri.getPath();
+        } else if (ContentResolver.SCHEME_CONTENT.equals(scheme)) {
+            Cursor cursor = context.getContentResolver().query(uri, new String[]{MediaStore.Images.ImageColumns.DATA}, null, null, null);
+            if (null != cursor) {
+                if (cursor.moveToFirst()) {
+                    int index = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
+                    if (index > -1) {
+                        data = cursor.getString(index);
+                    }
+                }
+                cursor.close();
+            }
+        }
+        return data;
+    }
 }
