@@ -128,6 +128,8 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
         tips.add("一个底部导航栏控件\nhttps://github.com/roughike/BottomBar");
         names.add("AlbumActivity Demo");
         tips.add("一款用于在Android设备上获取照片（拍照或从相册、文件中选择）、裁剪图片、压缩图片的开源工具库\nhttps://github.com/crazycodeboy/TakePhoto");
+        names.add("AMap Demo");
+        tips.add("高德地图之定位与聚合");
     }
 
     @Override
@@ -206,6 +208,9 @@ public class MainActivity extends AppCompatActivity implements IOnItemClickListe
                 break;
             case 24://AlbumActivity Demo
                 startActivity(AlbumActivity.class, names.get(position));
+                break;
+            case 25://AMap Demo
+                startActivity(MapActivity.class, names.get(position));
                 break;
             default:
                 break;

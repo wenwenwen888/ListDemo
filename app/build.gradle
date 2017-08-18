@@ -15,6 +15,8 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+        //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+        ndk { abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "arm64-v8a", "x86_64" }
     }
     buildTypes {
         release {
@@ -84,4 +86,6 @@ dependencies {
     apt 'com.zhy:mpermission-compiler:1.0.0'
     //TakePhoto:https://github.com/crazycodeboy/TakePhoto
     compile 'com.jph.takephoto:takephoto_library:4.0.3'
+    compile 'com.amap.api:3dmap:5.3.0'
+    compile 'com.amap.api:location:3.5.0'
 }

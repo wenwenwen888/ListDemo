@@ -14,6 +14,20 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <!--地图-->
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+
+
     <application
         android:name=".activity.MyApplication"
         android:allowBackup="true"
@@ -62,7 +76,15 @@
         <activity
             android:name=".activity.BottomBarActivity"
             android:theme="@style/AppTheme.TransNav" />
-        <activity android:name=".activity.AlbumActivity"></activity>
+        <activity android:name=".activity.AlbumActivity" />
+        <activity android:name=".activity.MapActivity" />
+
+
+        <!--高德地图-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="9adb5dfcac0f4ab152d341c8e3b1c9d2"/>
+
     </application>
 
 </manifest>
